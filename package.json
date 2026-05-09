@@ -1,0 +1,26 @@
+{
+  "name": "automationframework",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test_dev": "cross-env ENV_NAME=dev npx playwright test",
+    "test_demo": "cross-env ENV_NAME=demo npx playwright test",
+    "test_demo_cr_hd": "cross-env ENV_NAME=demo npx playwright test --project=chromium --headed",
+    "test_demo_cr_hl": "cross-env ENV_NAME=demo npx playwright test --project=chromium",
+    "test_demo_cr_ui": "cross-env ENV_NAME=demo npx playwright test --project=chromium --ui",
+    "test_demo_ui": "cross-env ENV_NAME=demo npx playwright test --ui"
+   
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.59.1",
+    "@types/node": "^25.6.0",
+    "cross-env": "^10.1.0"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2"
+  }
+}
