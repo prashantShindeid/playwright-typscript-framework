@@ -243,16 +243,16 @@ npm install
 
 # Run Tests
 
-## Run All Tests
+## Run All Tests in headed mode
 
 ```bash
-npx playwright test
+npm run test_demo_cr_hd
 ```
 
 ## Run Specific Test
 
 ```bash
-npx playwright test tests/ui/loginmodule.spec.ts
+cross-env ENV_NAME=demo npx playwright test tests/ui/loginmodule.spec.ts
 ```
 
 ---
