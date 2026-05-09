@@ -79,15 +79,8 @@ Covered Scenarios:
 
 # API Automation
 
-API folder structure is added for future API automation implementation.
+API folder structure is added for future UI+API automation implementation.
 
-Planned Coverage:
-
-- GET API Validation
-- POST API Validation
-- PUT/PATCH Requests
-- DELETE Requests
-- Authentication APIs
 
 ---
 
