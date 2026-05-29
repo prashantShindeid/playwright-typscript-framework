@@ -8,7 +8,8 @@
     "test_demo_cr_hd": "cross-env ENV_NAME=demo npx playwright test --project=chromium --headed",
     "test_demo_cr_hl": "cross-env ENV_NAME=demo npx playwright test --project=chromium",
     "test_demo_cr_ui": "cross-env ENV_NAME=demo npx playwright test --project=chromium --ui",
-    "test_demo_ui": "cross-env ENV_NAME=demo npx playwright test --ui"
+    "test_demo_ui": "cross-env ENV_NAME=demo npx playwright test --ui",
+    "test_demo_api": "cross-env ENV_NAME=demo npx playwright test --project=apiTest"
    
   },
   "keywords": [],

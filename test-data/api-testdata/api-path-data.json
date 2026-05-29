@@ -1,0 +1,9 @@
+{
+    "loginpath":"/api/ecom/auth/login",
+    "getproductpath":"/api/ecom/product/get-all-products",
+    "createorderpath":"/api/ecom/order/create-order",
+    "addtocartpath":"/api/ecom/user/add-to-cart",
+    "getorderpath":"/api/ecom/order/get-orders-details?id=",
+    "deleteorderpath":"/api/ecom/order/delete-order/"
+
+}

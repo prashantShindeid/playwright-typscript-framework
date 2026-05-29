@@ -1,5 +1,5 @@
 import {test,expect} from "../../fixtures/hooks-fixture";
-import loginModuleData from '../../test-data/login-module.json'
+import loginModuleData from '../../test-data/ui-testdata/login-module.json'
 
 test('Verify user can place an order',async ({getUrl,dashboardPage,cartPage,placeOrderPage,orderPage})=>{
 

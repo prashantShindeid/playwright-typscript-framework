@@ -1,0 +1,24 @@
+{
+    "placeorderpayload":{
+        
+        
+        "orders": [
+            {
+            "country": "India",
+            "productOrderedId": "6960eae1c941646b7a8b3ed3"
+            }
+        ]
+
+    },
+    "addtocartpayload":  {
+        "_id": "68bd38c2f669d6cb0ab9003d",
+        "product": {
+            "_id": "6960eae1c941646b7a8b3ed3"
+        }
+    },
+    "loginpayload":{
+     "userEmail": "prashushinde431@gmail.com",
+    "userPassword": "Admin@123"
+    }
+
+}
