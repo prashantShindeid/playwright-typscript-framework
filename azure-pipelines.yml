@@ -23,5 +23,5 @@ steps:
   displayName: Install Chromium
 
 - script: |
-    npm run test_demo_cr_hl
+    npm run $(SCRIPT_KEY_VAL)
   displayName: Run Tests
