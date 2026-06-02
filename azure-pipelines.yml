@@ -3,8 +3,16 @@
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
 
-trigger:
-- main
+#trigger:
+#- main
+
+schedules:
+- cron: '20 0 * * *'
+  displayName: "Daily Automatioc Pipline Run"
+  branches:
+    include:
+      - main
+  always: true
 
 pool:
   vmImage: ubuntu-latest
@@ -13,7 +21,7 @@ parameters:
   - name: SCRIPT_KEY_VAL
     displayName: 'Select script key'
     type: string
-    default: 'test_demo_cr_hl'
+    default: 'test_demo'
     values:
       - test_demo_cr_hl
       - test_demo
