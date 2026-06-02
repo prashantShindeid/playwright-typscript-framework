@@ -7,21 +7,21 @@ trigger:
 - main
 
 pool:
-  vmImage: ubuntu-latest #window-latest #macos-latest
+  vmImage: ubuntu-latest
 
 steps:
 - task: UseNode@1
   inputs:
-    version: '24.x'
+    version: '20.x'
 
-- script: npm ci
-  displayName: 'Installing playwright dependencies'
+- script: |
+    npm ci
+  displayName: Install Dependencies
 
+- script: |
+    npx playwright install chromium
+  displayName: Install Chromium
 
-- script: npx playwright install chromium --with-deps
-  displayName: 'Install playwright Chrome Browsers'
-
-- script: npm run test_demo
-  displayName: 'Run Tests'
-
-
+- script: |
+    npm run test_demo_cr_hl
+  displayName: Run Tests
