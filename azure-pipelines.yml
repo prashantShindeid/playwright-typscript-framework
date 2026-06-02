@@ -18,8 +18,8 @@ steps:
   displayName: 'Installing playwright dependencies'
 
 
-- script: npx playwright install --with-deps
-  displayName: 'Install playwright browsers'
+- script: npx playwright install chromium --with-deps
+  displayName: 'Install playwright Chrome Browsers'
 
 - script: npm run test_demo
   displayName: 'Run Tests'
