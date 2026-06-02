@@ -36,3 +36,17 @@ steps:
 - script: |
     npm run ${{parameters.SCRIPT_KEY_VAL}}
   displayName: Run Tests
+
+- task: PublishPipelineArtifact@1
+  inputs:
+    targetPath: 'playwright-report'
+    artifact: 'Playwright HTML Report'
+    publishLocation: 'pipeline'
+  condition: always()
+
+- task: PublishTestResults@2
+  inputs:
+    testResultsFormat: 'JUnit'
+    testResultsFiles: '**test-results/junit-report.xml'
+    testRunTitle: 'Playwright Junit Report'
+  condition: always()
